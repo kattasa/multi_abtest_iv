@@ -2,7 +2,7 @@
 rm(list = ls())
 library(tidyverse)
 library(MASS)
-library(glmnet)
+# library(glmnet)
 library(plotly)
 set.seed(999)
 
@@ -89,35 +89,35 @@ tsls_estimator <- function(sim_df, use_x, use_z) {
 }
 
 # TSLS with LASSO
-tsls_lasso_estimator <- function(sim_df, use_x, use_z, lambda) {
-  if(use_x > 1) {
-    use_x_list <- paste0('x_', 2:use_x)
-    use_x_frml <- paste0('x_', 2:use_x, collapse = ' + ')
-  }
-  else {
-    use_x_list <- ''
-    use_x_frml <- ''
-  }
-    
-  # first stage: x1 ~ x2...xN + z1...zN w/ lasso
-  X_stage1 <- sim_df %>%
-    dplyr::select(paste0('z_', 1:use_z), use_x_list) %>%
-    as.matrix()
-  x1_stage1 <- sim_df$x_1
-  
-  best_model <- glmnet(x = X_stage1, y = x1_stage1, alpha = 1, lambda = lambda)
-  sim_df$x_hat <- predict(object = best_model, s = lambda, newx = X_stage1) %>%
-    unlist()
-  # return(best_model)
-  # second stage: y ~ x1_hat + x2 + ... + xN
-  paste0('y ~ ', 'x_hat + ', use_x_frml) %>%
-    lm(., data = sim_df) %>%
-    summary() %>%
-    return()
-    # .$coefficients %>%
-    # .['x_hat', 'Estimate'] %>%
-    # return()
-}
+# tsls_lasso_estimator <- function(sim_df, use_x, use_z, lambda) {
+#   if(use_x > 1) {
+#     use_x_list <- paste0('x_', 2:use_x)
+#     use_x_frml <- paste0('x_', 2:use_x, collapse = ' + ')
+#   }
+#   else {
+#     use_x_list <- ''
+#     use_x_frml <- ''
+#   }
+#     
+#   # first stage: x1 ~ x2...xN + z1...zN w/ lasso
+#   X_stage1 <- sim_df %>%
+#     dplyr::select(paste0('z_', 1:use_z), use_x_list) %>%
+#     as.matrix()
+#   x1_stage1 <- sim_df$x_1
+#   
+#   best_model <- glmnet(x = X_stage1, y = x1_stage1, alpha = 1, lambda = lambda)
+#   sim_df$x_hat <- predict(object = best_model, s = lambda, newx = X_stage1) %>%
+#     unlist()
+#   # return(best_model)
+#   # second stage: y ~ x1_hat + x2 + ... + xN
+#   paste0('y ~ ', 'x_hat + ', use_x_frml) %>%
+#     lm(., data = sim_df) %>%
+#     summary() %>%
+#     return()
+#     # .$coefficients %>%
+#     # .['x_hat', 'Estimate'] %>%
+#     # return()
+# }
 
 # IVCV
 ivcv <- function(sim_df, use_z, use_x, q_seq, beta_true) {
