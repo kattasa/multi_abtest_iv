@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.15)  15 APR 2022 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.15)  15 APR 2022 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,18 +583,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 79.
-<./plots/increasing_nper_K/tsls_bias.png, id=19, 433.62pt x 433.62pt>
+<./plots/increasing_nper_K/tsls_bias.png, id=21, 433.62pt x 433.62pt>
 File: ./plots/increasing_nper_K/tsls_bias.png Graphic file (type png)
 <use ./plots/increasing_nper_K/tsls_bias.png>
-Package pdftex.def Info: ./plots/increasing_nper_K/tsls_bias.png  used on input line 124.
+Package pdftex.def Info: ./plots/increasing_nper_K/tsls_bias.png  used on input line 139.
 (pdftex.def)             Requested size: 252.94879pt x 252.94879pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./plots/increasing_nper_K/ivcv_bias.png, id=20, 433.62pt x 433.62pt>
+<./plots/increasing_nper_K/ivcv_bias.png, id=22, 433.62pt x 433.62pt>
 File: ./plots/increasing_nper_K/ivcv_bias.png Graphic file (type png)
 <use ./plots/increasing_nper_K/ivcv_bias.png>
-Package pdftex.def Info: ./plots/increasing_nper_K/ivcv_bias.png  used on input line 131.
+Package pdftex.def Info: ./plots/increasing_nper_K/ivcv_bias.png  used on input line 146.
 (pdftex.def)             Requested size: 252.94879pt x 252.94879pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -608,16 +608,16 @@ Package rerunfilecheck Info: File `ivcv_tsls_bias.out' has not changed.
 Here is how much of TeX's memory you used:
  20417 strings out of 480198
  382141 string characters out of 5892894
- 644928 words of memory out of 5000000
+ 648928 words of memory out of 5000000
  38018 multiletter control sequences out of 15000+600000
  508912 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,9n,80p,576b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/home/tui14429/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></home/tui14429/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ivcv_tsls_bias.pdf (2 pages, 451541 bytes).
+Output written on ivcv_tsls_bias.pdf (2 pages, 453293 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
  47 words of extra memory for PDF output out of 10000 (max. 10000000)
 
